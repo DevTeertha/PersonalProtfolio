@@ -29,17 +29,27 @@ h1{
     color: #363958;
 }
 h2{
-    font-size: 30px;
-    text-transform: uppercase;
-    color: #363958;
-}
-h4{
     font-size: 48px;
     text-transform: uppercase;
     color: #363958;
     text-align: center;
     margin-bottom: 50px;
     background-color: #F8F9FC;
+}
+h4{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #363958;
+}
+h5{
+    font-size: 24px;
+    color: #363958;
+    font-weight: 700;
+    margin-top: 15px;
+}
+h6{
+    color: #696871;
+    font-size: 23px;
 }
 .head{
     margin-top: 70px;
@@ -117,12 +127,7 @@ h4 span{
 .col2,.col3{
     margin-left: 70px;
 }
-h5{
-    font-size: 24px;
-    color: #363958;
-    font-weight: 700;
-    margin-top: 15px;
-}
+
 .work-card-p{
     color: #6C6C6C;
     width: 100%;
@@ -132,18 +137,23 @@ h5{
     margin: 0 80px;
     height: 500px;
 }
+#contact-section H2{
+    background-color: white;
+    margin-top: 20px;
+}
 .work-image{
     height: 210px;
     width: 60%;
     background-image: url("../img/contact.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 100px auto;
+    margin: 60px auto;
 }
 .work-image h3,.work-image a{
     background-color: rgba(255, 255, 255, 0);
     float: left;
-    margin: 70px 60px;
+    margin: 78px 0;
+    text-align: center;
 }
 .work-image h3{
     width: 50%;
@@ -158,6 +168,7 @@ h5{
     background-color: tomato;
     padding: 15px 30px;
     border-radius: 10px;
+    margin-left: 200px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
@@ -169,16 +180,60 @@ h5{
 .contact-row h5{
     font-size: 36px;
 }
-h6{
-    color: #696871;
-    font-size: 24px;
-}
 .icon-row{
     margin: 10px 0;
     text-align: center;
+}
+.icon-row{
+    text-decoration: none;
 }
 .icon-row img{
     width: 40px;
     height: 40px;
     margin: 15px;
+}
+#feature-section{
+    height: 600px;
+}
+.feature-header h2{
+    background-color: white;
+    margin: 50px 0;
+}
+.feature-row{
+    margin: 50px 80px;
+}
+.feature-row .feature-col{
+    background-image: url("../img/feature1.jpg");
+}
+.feature-row .feature-col1{
+    background-image: url("../img/feature2.jpg");
+}
+.feature-row .feature-col2{
+    background-image: url("../img/feature3.jpg");
+}
+.feature-row .feature-col1 , .feature-row .feature-col , .feature-row .feature-col2{
+    height: 400px;
+    width: 400px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 5px;
+    float: left;
+    box-shadow: 1px 1px 5px rgba(29, 29, 29, 0.541);
+    background-color: rgba(0, 0, 0, 0.616);
+    background-blend-mode: color;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.feature-col1 h5 , .feature-col h5 , .feature-col2 h5{
+    margin: 0;
+    color: white;
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    margin-top: 162px;
+}
+.feature-row .feature-col1 , .feature-row .feature-col2{
+    margin-left: 100px;
 }
