@@ -201,6 +201,7 @@ h4 span{
 }
 .feature-row{
     margin: 50px 80px;
+    height: 50%;
 }
 .feature-row .feature-col{
     background-image: url("../img/feature1.jpg");
@@ -212,8 +213,8 @@ h4 span{
     background-image: url("../img/feature3.jpg");
 }
 .feature-row .feature-col1 , .feature-row .feature-col , .feature-row .feature-col2{
-    height: 400px;
-    width: 400px;
+    height: 100%;
+    width: 30%;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
@@ -232,8 +233,8 @@ h4 span{
     background-color: transparent;
     font-size: 40px;
     text-align: center;
-    margin-top: 162px;
+    margin-top: 30%;
 }
 .feature-row .feature-col1 , .feature-row .feature-col2{
-    margin-left: 100px;
+    margin-left: 50px;
 }
