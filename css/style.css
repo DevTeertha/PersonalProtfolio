@@ -63,7 +63,6 @@ p{
 }
 img{
     width: 100%;
-    text-align: right;
 }
 .highlight-text{
     color: #fbd762;
@@ -85,17 +84,8 @@ img{
     -o-border-radius: 5px;
 }
 .row{
-    height: 500px;
-}
-.col{
-    width: 40%;
-    float: left;
-}
-.col2{
-    margin-left: 100px;
-}
-.about-section{
-    height: 500px;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 .about-header{
     margin-top: 70px;
@@ -106,28 +96,28 @@ h4 span{
 }
 #work-section{
     background-color: #F8F9FC;
-    padding: 100px 0;
-    height: 500px;
+    padding: 3em 0;
 }
 .work-row{
-    margin: 0px 80px;
+    display: grid;
+    grid-template-columns: 31.5% 31.5% 31.5%;
+    grid-gap: 38.5px;
     background-color: #F8F9FC;
+    margin: 0 80px;
 }
-.col-of-3{
-    width: 25%;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.432);
-    float: left;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
+.card{
+    padding: 2em;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+    border-radius: 5%;
+    -webkit-border-radius: 5%;
+    -moz-border-radius: 5%;
+    -ms-border-radius: 5%;
+    -o-border-radius: 5%;
 }
-.col2,.col3{
-    margin-left: 70px;
+.card-img{
+    padding: 1em;
 }
-
 .work-card-p{
     color: #6C6C6C;
     width: 100%;
@@ -135,44 +125,39 @@ h4 span{
 }
 .contact-row{
     margin: 0 80px;
-    height: 500px;
 }
 #contact-section H2{
     background-color: white;
     margin-top: 20px;
 }
 .work-image{
-    height: 210px;
-    width: 60%;
+    height: 13.3em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     background-image: url("../img/contact.png");
     background-repeat: no-repeat;
     background-size: 100%;
-    margin: 60px auto;
+    margin: 5% 20%;
 }
-.work-image h3,.work-image a{
-    background-color: rgba(255, 255, 255, 0);
-    float: left;
-    margin: 78px 0;
-    text-align: center;
+.work-image a , .work-image h3{
+    background-color: transparent;
+    color: white;
 }
 .work-image h3{
-    width: 50%;
-    font-size: 45px;
-    color: white;
+    font-size: 3em;
+    margin: 0;
 }
 .work-image a{
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: 400;
     background-color: tomato;
-    padding: 15px 30px;
-    border-radius: 10px;
-    margin-left: 200px;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    -o-border-radius: 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0.8em 1.5em;
+    border-radius: 0.4em;
+    -webkit-border-radius: 0.4em;
+    -moz-border-radius: 0.4em;
+    -ms-border-radius: 0.4em;
+    -o-border-radius: 0.4em;
 }
 .contact-row h5 , .contact-row h6{
     text-align: center;
@@ -193,15 +178,15 @@ h4 span{
     margin: 15px;
 }
 #feature-section{
-    height: 600px;
+    padding: 3em 0em;
 }
 .feature-header h2{
     background-color: white;
-    margin: 50px 0;
 }
 .feature-row{
     margin: 50px 80px;
-    height: 50%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
 }
 .feature-row .feature-col{
     background-image: url("../img/feature1.jpg");
@@ -213,29 +198,24 @@ h4 span{
     background-image: url("../img/feature3.jpg");
 }
 .feature-row .feature-col1 , .feature-row .feature-col , .feature-row .feature-col2{
-    height: 100%;
-    width: 30%;
+    border-radius: 1em;
+    margin: 1em 1em;
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 5px;
-    float: left;
     box-shadow: 1px 1px 5px rgba(29, 29, 29, 0.541);
     background-color: rgba(0, 0, 0, 0.616);
     background-blend-mode: color;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius: 1em;
+    -moz-border-radius: 1em;
+    -ms-border-radius: 1em;
+    -o-border-radius: 1em;
 }
 .feature-col1 h5 , .feature-col h5 , .feature-col2 h5{
-    margin: 0;
+    padding:4em 0;
     color: white;
     background-color: transparent;
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
-    margin-top: 30%;
-}
-.feature-row .feature-col1 , .feature-row .feature-col2{
-    margin-left: 50px;
 }
 /*Final Edit*/
