@@ -96,3 +96,18 @@
         font-size: 2rem;
     }
 }
+@media (max-width: 576px){
+    .container{
+        margin: 0;
+    }
+    #nav-section .container .row-nav{
+        display: block;
+        width: 100%;
+    }
+    #nav-section .container .row-nav .col-nav{
+        text-align: center;
+    }
+    #nav-section .container .row-nav .col-nav nav{
+        text-align: center;
+    }
+}
