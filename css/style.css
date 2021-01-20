@@ -66,22 +66,34 @@ img{
 }
 .nav-logo{
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: 600;
-    color: rgb(16, 27, 131);
+    color: rgba(0, 0, 0, 0.637);
+    font-family: 'Indie Flower', cursive;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
 }
 #nav-section .row-nav{
     display: grid;
     grid-template-columns: 49% 49%;
-    padding: 1rem 0;
+    margin: 0;
+    
 }
 #nav-section .row-nav .col-nav nav{
     text-align: right;
+    
+}
+#nav-section .row-nav .col-nav nav ul{
+    margin: 0.8rem 0;
 }
 #nav-section .row-nav .col-nav nav ul li{
     display: inline;
     cursor: pointer;
     margin: 0 0.5rem;
+    
 }
 #nav-section .row-nav .col-nav nav ul li a{
     text-decoration: none;
@@ -95,7 +107,7 @@ img{
 }
 /*Navigation Menu End*/
 #header-section{
-    padding: 2rem 0;
+    padding: 5rem 0;
 }
 .container, #about-section{
     margin: 0 4.44rem;
