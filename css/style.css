@@ -167,7 +167,7 @@ h4 span{
 .work-image{
     display: grid;
     grid-template-columns: 50% 50%;
-    background-image: url("../img/contact.png");
+    background-image: url("../img/contact-low.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 1.5em;
