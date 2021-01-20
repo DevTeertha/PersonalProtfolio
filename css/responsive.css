@@ -1,35 +1,98 @@
-@media (max-width: 1008px){
-    .feature-row .feature-col1 , .feature-row .feature-col , .feature-row .feature-col2{
-        margin: 0.5em;
-    }
-    .feature-col1 h5 , .feature-col h5 , .feature-col2 h5{
-        padding:3em 0;
-        font-size: 1.5em;
-    }
-    .contact-title h3{
-        font-size: 1.5em;
+@media (max-width: 1400px){
+    .contact-row{
+        margin: 0;
     }
 }
-@media (max-width: 991px){
-    .col h1{
-        font-size: 2.5em;
+@media (max-width: 1200px){
+    #nav-section .row-nav{
+        grid-template-columns: 20% 80%;
     }
-    .feature-header h2 , #work-section h2 , #contact-section h2{
-        font-size: 2em;
+    #header-section .container .row .col>h1{
+        font-size: 3rem;
+    }
+    .contact-title h3{
+        font-size: 1.6rem;
+    }
+    .contact-btn button a{
+        font-size: 1rem;
+    }
+    .contact-btn button{
+        padding: 1rem 0;
     }
     .work-row , .feature-row{
         grid-template-columns: 49% 49%;
     }
-    .contact-btn button a{
-        background-color: tomato;
-        font-size: 1em;
-        text-decoration: none;
-        padding: 0.8em 1.5em;
-        border-radius: 0.5em;
+    .work-image{
+        width: 80%;
+    }
+    .contact-row{
+        margin: 4rem;
     }
 }
-@media (max-width: 823px){
-    .contact-title h3{
-        font-size: 1em;
+@media (max-width: 992px){
+    .container{
+        margin: 0 1.5rem;
+    }
+    .work-image{
+        width: 80%;
+    }
+    .feature-col1 h5 , .feature-col h5 , .feature-col2 h5{
+        padding:1em 0;
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 922px){
+    #header-section .container .row .col h1{
+        font-size: 2.5rem;
+    }
+    .work-image{
+        width: 100%;
+    }
+    .contact-btn{
+        padding-right: 0.5rem;
+    }
+    .contact-row{
+        margin: 2rem;
+    }
+}
+@media (max-width: 768px){
+    .row-nav{
+        display: grid;
+        grid-template-columns: 5% 95%;
+    }
+    #nav-section .row-nav .col-nav nav ul li{
+        margin: 0;
+    }
+    #nav-section .row-nav .col-nav nav ul li a{
+        font-size: 0.9rem;
+        padding: 0.2rem 0.5rem;
+    }
+    .contact-btn{
+        padding-right: 1rem;
+    }
+    .container{
+        margin: 0 3rem;
+    }
+    .work-image{
+        grid-template-columns: 60% 40%;
+    }
+    .contact-title{
+        padding-left: 0.55rem;
+    }
+    .contact-row{
+        margin: 0;
+    }
+    .work-row , .feature-row{
+        grid-template-columns: 100%;
+    }
+    .row{
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .col{
+        margin: 1rem 0;
+    }
+    h2{
+        font-size: 2rem;
     }
 }
