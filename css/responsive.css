@@ -1,0 +1,35 @@
+@media (max-width: 1008px){
+    .feature-row .feature-col1 , .feature-row .feature-col , .feature-row .feature-col2{
+        margin: 0.5em;
+    }
+    .feature-col1 h5 , .feature-col h5 , .feature-col2 h5{
+        padding:3em 0;
+        font-size: 1.5em;
+    }
+    .contact-title h3{
+        font-size: 1.5em;
+    }
+}
+@media (max-width: 991px){
+    .col h1{
+        font-size: 2.5em;
+    }
+    .feature-header h2 , #work-section h2 , #contact-section h2{
+        font-size: 2em;
+    }
+    .work-row , .feature-row{
+        grid-template-columns: 49% 49%;
+    }
+    .contact-btn button a{
+        background-color: tomato;
+        font-size: 1em;
+        text-decoration: none;
+        padding: 0.8em 1.5em;
+        border-radius: 0.5em;
+    }
+}
+@media (max-width: 823px){
+    .contact-title h3{
+        font-size: 1em;
+    }
+}

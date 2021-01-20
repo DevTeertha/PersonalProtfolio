@@ -4,25 +4,7 @@
     padding: 0;
     background-color: white;
 }
-.menu{
-    margin-bottom: 60px;
-}
-ul{
-    text-align: right;
-    margin-top: 30px;
-}
-ul li{
-    list-style: none;
-    display: inline;
-    margin-left: 20px;
-    padding: 10px;
-}
-ul li a{
-    text-decoration: none;
-    color: rgb(49, 49, 49);
-    font-size: 16px;
-    font-weight: 400;
-}
+/*Basic*/
 h1{
     font-size: 60px;
     text-transform: uppercase;
@@ -35,6 +17,12 @@ h2{
     text-align: center;
     margin-bottom: 50px;
     background-color: #F8F9FC;
+}
+h3{
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #363958;
+    margin: 0.6em 0;
 }
 h4{
     font-size: 30px;
@@ -51,46 +39,90 @@ h6{
     color: #696871;
     font-size: 23px;
 }
-.head{
-    margin-top: 70px;
-}
 p{
     font-size: 16px;
-    margin-top: 30px;
-    margin-bottom: 60px;
     color: rgb(73, 73, 73);
     width: 90%;
 }
 img{
     width: 100%;
 }
+/*Basic End*/
 .highlight-text{
     color: #fbd762;
 }
+/*######HEADER SECTION#####*/
+
+/*Navigation Menu*/
+ul{
+    padding: 1.5em;
+    text-align: right;
+}
+ul li{
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+    padding: 10px;
+}
+ul li a{
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    font-size: 16px;
+    font-weight: 400;
+}
+/*Navigation Menu End*/
 #header-section, #about-section{
-    margin: 25px 80px;
+    margin: 0 80px;
 }
 .btn{
-    text-decoration: none;
+    margin: 1em 0;
+    cursor: pointer;
     background-color: #4f46cf;
     background-image: linear-gradient(180deg , #464192,#4f46cf);
-    color: whitesmoke;
-    padding: 17px 40px;
+    padding: 1.3em 0;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.btn a{
+    padding: 1.3em 3.5em;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
     text-transform: capitalize;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
 }
 .row{
     display: grid;
     grid-template-columns: 50% 50%;
+    padding: 2em 0;
 }
-.about-header{
-    margin-top: 70px;
-    margin-left: 160px;
+.col{
+    padding: 1em;
+    text-align: justify;
 }
+.col-img{
+    width: 85%;
+}
+.head{
+    margin-top: 1.5em;
+}
+.col h3{
+    margin-top: 3em;
+}
+/*###### - HEADER SECTION END - #####*/
+
+/*###### - HEADER SECTION  - #####*/
+
+
+
+
+
+
+
 h4 span{
     background-color: #F8F9FC;
 }
@@ -98,7 +130,7 @@ h4 span{
     background-color: #F8F9FC;
     padding: 3em 0;
 }
-.work-row{
+.work-row , .feature-row{
     display: grid;
     grid-template-columns: 31.5% 31.5% 31.5%;
     grid-gap: 38.5px;
@@ -123,6 +155,8 @@ h4 span{
     width: 100%;
     margin-bottom: 0;
 }
+
+/* - CONTACT SECTION START - */
 .contact-row{
     margin: 0 80px;
 }
@@ -131,33 +165,62 @@ h4 span{
     margin-top: 20px;
 }
 .work-image{
-    height: 13.3em;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
     background-image: url("../img/contact.png");
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    border-radius: 1.5em;
     margin: 5% 20%;
+    -webkit-border-radius: 1.5em;
+    -moz-border-radius: 1.5em;
+    -ms-border-radius: 1.5em;
+    -o-border-radius: 1.5em;
 }
-.work-image a , .work-image h3{
+.contact-btn , .contact-title , .contact-title h3{
     background-color: transparent;
     color: white;
 }
-.work-image h3{
-    font-size: 3em;
+.contact-title h3{
+    font-size: 2em;
     margin: 0;
 }
-.work-image a{
+.contact-title,
+.contact-btn{
+    padding: 3em 0;
+}
+.contact-title{
+    position: relative;
+    top: 7%;
+    padding-left: 2em;
+}
+.contact-btn{
+    padding-right: 3em;
+    text-align: right;
+}
+.contact-btn button{
+    cursor: pointer;
+    padding: 1.2em 0;
     background-color: tomato;
+    border:none;
+    outline: none;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
+}
+.contact-btn button a{
+    background-color: tomato;
+    color: white;
     font-size: 1.5em;
     text-decoration: none;
     padding: 0.8em 1.5em;
-    border-radius: 0.4em;
-    -webkit-border-radius: 0.4em;
-    -moz-border-radius: 0.4em;
-    -ms-border-radius: 0.4em;
-    -o-border-radius: 0.4em;
+    border-radius: 0.5em;
+    -webkit-border-radius: 0.5em;
+    -moz-border-radius: 0.5em;
+    -ms-border-radius: 0.5em;
+    -o-border-radius: 0.5em;
 }
 .contact-row h5 , .contact-row h6{
     text-align: center;
@@ -177,17 +240,20 @@ h4 span{
     height: 40px;
     margin: 15px;
 }
+/* - CONTACT SECTION END - */
+
+
 #feature-section{
     padding: 3em 0em;
 }
 .feature-header h2{
     background-color: white;
 }
-.feature-row{
+/*.feature-row{
     margin: 50px 80px;
     display: grid;
     grid-template-columns: 33.33% 33.33% 33.33%;
-}
+}*/
 .feature-row .feature-col{
     background-image: url("../img/feature1.jpg");
 }
